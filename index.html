@@ -1,120 +1,226 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#101014">
-<meta name="description" content="Deep & Crust Pizza in Santo Domingo. Discover our pizzas, combos, catering, birthday specials, and party rooms.">
 <title>Deep & Crust Pizza | Santo Domingo</title>
+<meta name="description" content="Deep & Crust Pizza in Santo Domingo. Pizza, catering, birthday parties, party rooms and live DJ karaoke.">
 <style>
-:root{--red:#ef233c;--blue:#2563eb;--black:#101014;--ink:#191a22;--white:#fff;--muted:#b9bbc7}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:var(--white);font-family:Inter,Arial,sans-serif;line-height:1.55}
-a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
-header{position:sticky;top:0;z-index:5;background:rgba(16,16,20,.94);backdrop-filter:blur(12px);border-bottom:1px solid #2c2d37}
-.nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0;gap:20px}.brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:-.5px}.mark{width:43px;height:43px;border-radius:13px;background:linear-gradient(135deg,var(--red) 0 50%,var(--blue) 50%);display:grid;place-items:center;font-size:22px;box-shadow:0 7px 22px #ef233c33}.brand small{display:block;color:var(--muted);font-size:10px;letter-spacing:2px;text-transform:uppercase}
-nav{display:flex;gap:24px;font-size:14px;color:#e4e4ec}nav a:hover{color:var(--red)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:10px;font-weight:800;background:var(--red);color:white;border:0;transition:.2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}.btn.blue{background:var(--blue)}.btn.outline{background:transparent;border:1px solid #555766}
-.hero{position:relative;overflow:hidden;padding:92px 0 78px;background:radial-gradient(ellipse at 85% 20%,#2563eb45,transparent 35%),radial-gradient(ellipse at 8% 70%,#ef233c35,transparent 34%),#101014}
-.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:48px}.eyebrow{color:#8bb4ff;font-size:12px;font-weight:900;letter-spacing:2.6px;text-transform:uppercase}.hero h1{font-size:clamp(42px,6vw,76px);line-height:.98;letter-spacing:-3px;margin:18px 0}.hero h1 span{color:var(--red)}.hero p{color:#d0d1da;font-size:18px;max-width:570px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.hero-art{min-height:370px;display:grid;place-items:center;position:relative}.pizza-disc{width:min(360px,80vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#f8c56b 0 4%,#d65b26 5% 8%,#f5d38b 9% 14%,#9e361b 15% 18%,#f6d28b 19% 24%,#a53d20 25% 29%,#f5ce7b 30% 39%,#b43e22 40% 43%,#eebf70 44% 50%,#8d2d1d 51% 55%,#d49a4b 56% 100%);border:12px solid #7c351e;box-shadow:0 25px 70px #0009;transform:rotate(-12deg);position:relative}.pizza-disc:before{content:"";position:absolute;inset:9%;border:3px dashed #fff6;border-radius:50%}.pizza-disc:after{content:"🍕";font-size:70px;position:absolute;right:8%;bottom:8%;filter:drop-shadow(0 5px 4px #0005)}.floating{position:absolute;background:#20212a;border:1px solid #3c3e4b;padding:12px 16px;border-radius:14px;box-shadow:0 12px 35px #0007;font-weight:800}.floating strong{color:var(--red)}.f1{top:12%;left:0}.f2{bottom:12%;right:0}.stripe{height:5px;background:linear-gradient(90deg,var(--red) 0 50%,var(--blue) 50%)}
-section{padding:76px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 36px}.section-head .eyebrow{color:#7ea7ff}.section-head h2{font-size:clamp(30px,4vw,46px);line-height:1.1;margin:12px 0}.section-head p{color:var(--muted);margin:0}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:linear-gradient(145deg,#20212a,#17181f);border:1px solid #30313d;border-radius:18px;padding:24px;position:relative;overflow:hidden}.card:before{content:"";position:absolute;top:0;left:0;width:4px;height:100%;background:var(--red)}.card:nth-child(2):before{background:var(--blue)}.food-icon{font-size:35px}.card h3{margin:12px 0 7px;font-size:21px}.card p{color:var(--muted);font-size:14px;margin:0}.tag{display:inline-block;margin-top:16px;color:#a8c5ff;font-size:11px;font-weight:900;letter-spacing:1px;text-transform:uppercase}
-.promo{background:linear-gradient(110deg,#ef233c 0%,#c51d3a 48%,#2563eb 100%);border-radius:24px;padding:36px;display:flex;justify-content:space-between;align-items:center;gap:24px}.promo h2{font-size:clamp(27px,4vw,40px);margin:0 0 8px}.promo p{margin:0;color:#fffde9;max-width:600px}.promo .btn{background:var(--black)}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}.about-panel{padding:30px;border-radius:20px;background:#1c1d25;border:1px solid #30313d}.about-panel h3{font-size:25px;margin:0 0 10px}.about-panel p{color:var(--muted)}.location{display:flex;gap:14px;align-items:flex-start;margin-top:20px}.location .pin{background:#262c43;color:#93b5ff;border-radius:10px;padding:11px}
-footer{border-top:1px solid #30313d;padding:28px 0;color:var(--muted);font-size:13px}.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-.notice{font-size:12px;color:#b8b9c4;margin-top:22px}
-@media(max-width:760px){nav{display:none}.hero{padding:62px 0}.hero-grid,.about-grid{grid-template-columns:1fr}.hero-art{min-height:300px;order:-1}.pizza-disc{width:260px}.cards{grid-template-columns:1fr}.promo{align-items:flex-start;flex-direction:column;padding:26px}.hero h1{letter-spacing:-1.8px}}
-
-.lang-switch{display:flex;align-items:center;gap:5px;border:1px solid #3c3e4b;border-radius:10px;padding:4px;background:#191a22}
-.lang-switch button{border:0;background:transparent;color:#b9bbc7;padding:7px 9px;border-radius:7px;font-weight:800;cursor:pointer}
-.lang-switch button.active{background:var(--blue);color:#fff}
-@media(max-width:760px){.lang-switch{margin-left:auto}.nav>.btn{display:none}}
-
+:root{--red:#ef233c;--blue:#2563eb;--black:#101014;--gold:#e5cf8a}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--black);color:white;font-family:Arial,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;background:#101014f5;border-bottom:1px solid #333;z-index:5}
+nav{max-width:1100px;margin:auto;padding:12px 5%;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.logo{font-family:cursive;font-size:30px;font-weight:bold;line-height:1.1}
+.logo span{color:var(--red)}
+.links{display:flex;gap:15px;align-items:center;flex-wrap:wrap;font-size:14px}
+.lang button, .btn{border:0;border-radius:7px;padding:10px 14px;background:#292a33;color:white;cursor:pointer;font-weight:bold}
+.lang button.active{background:var(--blue)}
+.btn{display:inline-block;background:var(--red);padding:12px 19px;margin:5px 5px 5px 0}
+.btn.blue{background:var(--blue)}
+.wrap{max-width:1100px;width:90%;margin:auto}
+.hero{padding:65px 0;background:linear-gradient(90deg,#101014ef,#10101499),url('https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1600&q=85') center/cover}
+.hero h1{font-size:clamp(42px,7vw,76px);line-height:1.05;margin:0 0 15px}
+.hero h1 span{color:var(--red)}
+.hero p{font-size:19px;max-width:600px;color:#eee}
+.eyebrow{color:var(--gold);font-weight:bold;letter-spacing:3px;text-transform:uppercase}
+section{padding:55px 0}
+h2{font-size:34px;line-height:1.2;margin:0 0 12px}
+.intro{color:#c9c9d0;margin-bottom:25px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.card{background:#202127;border:1px solid #393a44;border-radius:13px;overflow:hidden}
+.card img{width:100%;height:180px;object-fit:cover;display:block}
+.card .pad{padding:18px}
+.card h3{margin:0 0 8px}
+.price{color:var(--gold);font-weight:bold}
+.menu-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:15px}
+.menu-group{background:#1d1d23;border:1px solid #383841;border-radius:12px;padding:20px}
+.menu-group h3{color:var(--gold);margin-top:0}
+.menu-item{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #36363c;padding:8px 0}
+.menu-item:last-child{border:0}
+.promo{background:linear-gradient(120deg,#ef233c,#a50f32 55%,#2563eb);border-radius:14px;padding:25px}
+.promo h3{font-size:24px;margin:0 0 8px}
+.dark{background:#17171d}
+.event{border-left:4px solid var(--red);padding:15px 18px;background:#202127;border-radius:6px}
+footer{border-top:1px solid #333;padding:28px 0;color:#ccc;font-size:14px}
+.small{font-size:13px;color:#b8b8c2}
+@media(max-width:600px){.links{gap:10px}.logo{font-size:25px}.hero{padding:48px 0}section{padding:40px 0}}
 </style>
 </head>
 <body>
-<header><div class="wrap nav">
-<a class="brand" href="#inicio"><span class="mark">🍕</span><span>DEEP & CRUST<small>PIZZA · SANTO DOMINGO</small></span></a>
-<nav><a href="#menu" data-en="Menu" data-es="Menú">Menu</a><a href="#nightlife" data-en="DJ & Karaoke" data-es="DJ y Karaoke">DJ & Karaoke</a><a href="#nosotros" data-en="About" data-es="Nosotros">About</a><a href="#ubicacion" data-en="Location" data-es="Ubicación">Location</a></nav>
-<div class="lang-switch" id="language-switch" aria-label="Choose language"><button type="button" class="active" data-lang="en">EN</button><button type="button" data-lang="es">ES</button></div>
-<a class="btn" href="#menu" data-en="View Menu" data-es="Ver menú">View Menu</a>
-</div></header>
-<div class="stripe"></div>
+<header>
+<nav>
+<a class="logo" href="#home">Deep <span>&</span> Crust</a>
+<div class="links">
+<a href="#menu" data-en="Menu" data-es="Menú">Menu</a>
+<a href="#offers" data-en="Offers" data-es="Ofertas">Offers</a>
+<a href="#events" data-en="Events" data-es="Eventos">Events</a>
+<a href="#catering" data-en="Catering" data-es="Catering">Catering</a>
+<div class="lang">
+<button id="enBtn" class="active" onclick="setLang('en')">EN</button>
+<button id="esBtn" onclick="setLang('es')">ES</button>
+</div>
+</div>
+</nav>
+</header>
+
 <main>
-<section class="hero" id="inicio"><div class="wrap hero-grid">
-<div><div class="eyebrow">Santo Domingo · Dominican Republic</div><h1 data-en="More than pizza.<br><span>An experience</span><br>in every slice." data-es="Mucho más que pizza.<br><span>Una experiencia</span><br>en cada porción.">More than pizza.<br><span>An experience</span><br>in every slice.</h1>
-<p data-en="Welcome to Deep & Crust Pizza. A bold new pizza experience made for great flavor, good company, and memorable moments. We’re bringing something delicious to Santo Domingo." data-es="Bienvenido a Deep & Crust Pizza. Una nueva experiencia de pizza con mucho sabor, buena compañía y momentos memorables. Llegamos a Santo Domingo con algo delicioso.">Welcome to Deep & Crust Pizza. A bold new pizza experience made for great flavor, good company, and memorable moments. We’re bringing something delicious to Santo Domingo.</p>
-<div class="actions"><a class="btn" href="#menu">Explore the Menu</a><a class="btn blue" href="#ubicacion">Find Us</a></div>
-<div class="notice" data-en="Opening details coming soon. Information will be updated before launch." data-es="Próximamente anunciaremos los detalles de apertura. Actualizaremos la información antes del lanzamiento.">Opening details coming soon. Information will be updated before launch.</div></div>
-<div class="hero-art"><div class="floating f1">BOLD <strong>FLAVOR</strong></div><div class="pizza-disc" aria-label="Ilustración decorativa de pizza"></div><div class="floating f2">RED × BLACK × BLUE</div></div>
-</div></section>
-
-<section id="nightlife"><div class="wrap">
-<div class="section-head"><div class="eyebrow" data-en="Pizza, music & good vibes" data-es="Pizza, música y buen ambiente">Pizza, music & good vibes</div><h2 data-en="Live DJ & Karaoke Nights" data-es="Noches de DJ en vivo y karaoke">Live DJ & Karaoke Nights</h2><p data-en="Join us every Thursday, Saturday, and Sunday from 8:00 PM to 2:00 AM for live DJ sets and karaoke at Deep & Crust Pizza in Santo Domingo." data-es="Ven todos los jueves, sábados y domingos de 20:00 a 2:00 para disfrutar de DJ en vivo y karaoke en Deep & Crust Pizza, Santo Domingo.">Join us every Thursday, Saturday, and Sunday from 8:00 PM to 2:00 AM for live DJ sets and karaoke at Deep & Crust Pizza in Santo Domingo.</p></div>
-<div class="cards">
-<article class="card"><div class="food-icon">🎧</div><h3 data-en="Live DJ" data-es="DJ en vivo">Live DJ</h3><p data-en="Feel the energy, enjoy the music, and make a night of it with great pizza and your favorite people." data-es="Disfruta la música, la energía y una gran noche con pizza y tu gente favorita.">Feel the energy, enjoy the music, and make a night of it with great pizza and your favorite people.</p><span class="tag">Thu · Sat · Sun</span></article>
-<article class="card"><div class="food-icon">🎤</div><h3 data-en="Karaoke" data-es="Karaoke">Karaoke</h3><p data-en="Take the mic, sing your favorites, and bring your friends for a fun night out." data-es="Toma el micrófono, canta tus canciones favoritas y ven con tus amigos.">Take the mic, sing your favorites, and bring your friends for a fun night out.</p><span class="tag">8:00 PM – 2:00 AM</span></article>
-<article class="card"><div class="food-icon">🍕</div><h3 data-en="Pizza After Dark" data-es="Pizza hasta tarde">Pizza After Dark</h3><p data-en="Pair your night out with pizza, sides, and good company. Contact us for event and party-room inquiries." data-es="Acompaña tu salida con pizza, acompañantes y buena compañía. Contáctanos para eventos y salones.">Pair your night out with pizza, sides, and good company. Contact us for event and party-room inquiries.</p><span class="tag">Santo Domingo</span></article>
+<div class="hero" id="home">
+<div class="wrap">
+<div class="eyebrow" data-en="Dip or drip it" data-es="Sabor en cada bocado">Dip or drip it</div>
+<h1>Deep <span>&</span> Crust<br><span data-en="Pizza & More" data-es="Pizza y más">Pizza & More</span></h1>
+<p data-en="New York-style pizza, burgers, crispy fried chicken, wings and unforgettable celebrations in Santo Domingo." data-es="Pizza estilo Nueva York, hamburguesas, pollo crujiente, alitas y celebraciones inolvidables en Santo Domingo.">New York-style pizza, burgers, crispy fried chicken, wings and unforgettable celebrations in Santo Domingo.</p>
+<a class="btn" href="#menu" data-en="Explore Our Menu" data-es="Ver el menú">Explore Our Menu</a>
+<a class="btn blue" href="https://wa.me/18493300227" data-en="Order / Contact Us" data-es="Pedir / Contactarnos">Order / Contact Us</a>
 </div>
-</div></section>
-
-<section id="menu"><div class="wrap">
-<div class="section-head"><div class="eyebrow" data-en="Something delicious is baking" data-es="Algo delicioso se está horneando">Something delicious is baking</div><h2 data-en="Explore Our World of Flavor" data-es="Explora nuestro mundo de sabor">Explore Our World of Flavor</h2><p data-en="Here’s a preview of our featured categories. The final menu and prices will be added once confirmed." data-es="Aquí tienes un adelanto de nuestras categorías. Añadiremos el menú definitivo y los precios cuando estén confirmados.">Here’s a preview of our featured categories. The final menu and prices will be added once confirmed.</p></div>
-<div class="cards">
-<article class="card"><div class="food-icon">🍕</div><h3 data-en="Classic Pizzas" data-es="Pizzas clásicas">Classic Pizzas</h3><p data-en="Timeless favorites with delicious combinations made for sharing with friends and family." data-es="Favoritas de siempre con combinaciones deliciosas para compartir con amigos y familiares.">Timeless favorites with delicious combinations made for sharing with friends and family.</p><span class="tag">Menu coming soon</span></article>
-<article class="card"><div class="food-icon">🔥</div><h3 data-en="Deep Specialties" data-es="Especialidades Deep">Deep Specialties</h3><p data-en="House-inspired recipes, standout ingredients, and a signature personality in every pizza." data-es="Recetas de la casa, ingredientes destacados y personalidad propia en cada pizza.">House-inspired recipes, standout ingredients, and a signature personality in every pizza.</p><span class="tag">Menu coming soon</span></article>
-<article class="card"><div class="food-icon">🎉</div><h3 data-en="Event Catering" data-es="Catering para eventos">Event Catering</h3><p data-en="Pizza catering for birthdays, gatherings, and celebrations. Contact us to discuss options and plan your order." data-es="Catering de pizza para cumpleaños, reuniones y celebraciones. Contáctanos para conocer las opciones y organizar tu pedido.">Pizza catering for birthdays, gatherings, and celebrations. Contact us to discuss options and plan your order.</p><span class="tag" data-en="Ask About Catering" data-es="Consulta sobre catering">Ask About Catering</span></article>
 </div>
-<div style="height:18px"></div>
-<div class="cards">
-<article class="card"><div class="food-icon">🎂</div><h3 data-en="Birthday Special" data-es="Especial de cumpleaños">Birthday Special</h3><p data-en="Buy one, get one free! Ask us about eligible items and offer terms." data-es="¡Compra uno y llévate otro gratis! Pregunta por los productos participantes y las condiciones.">Buy one, get one free! Ask us about eligible items and offer terms.</p><span class="tag" data-en="Birthday Offer" data-es="Oferta de cumpleaños">Birthday Offer</span></article>
-<article class="card"><div class="food-icon">🏠</div><h3 data-en="Party Rooms" data-es="Salones para fiestas">Party Rooms</h3><p data-en="Reserve a party room for your celebration and receive a free birthday cake with your confirmed reservation." data-es="Reserva un salón para tu celebración y recibe un pastel de cumpleaños gratis al confirmar la reserva.">Reserve a party room for your celebration and receive a free birthday cake with your confirmed reservation.</p><span class="tag" data-en="Book Your Celebration" data-es="Reserva tu celebración">Book Your Celebration</span></article>
-<article class="card"><div class="food-icon">🥤</div><h3 data-en="Combos & Sides" data-es="Combos y acompañantes">Combos & Sides</h3><p data-en="Shareable options to complete your order and enjoy with friends and family." data-es="Opciones para compartir y completar tu pedido con amigos y familiares.">Shareable options to complete your order and enjoy with friends and family.</p><span class="tag">Menu coming soon</span></article>
-</div>
-</div></section>
-<section><div class="wrap"><div class="promo"><div><h2 data-en="Your next craving is just around the corner." data-es="Tu próximo antojo está cada vez más cerca.">Your next craving is just around the corner.</h2><p>Event Catering, promociones de cumpleaños y salones para fiestas. Contáctanos para consultar disponibilidad, condiciones y reservar tu celebración en Santo Domingo.</p></div><a class="btn" href="#ubicacion">Opening Details</a></div></div></section>
-<section id="nosotros"><div class="wrap about-grid">
-<div><div class="eyebrow" data-en="Our Story" data-es="Nuestra historia">Our Story</div><h2 style="font-size:clamp(32px,4vw,46px);line-height:1.1;margin:12px 0" data-en="A bold brand. A flavor to remember." data-es="Una marca con carácter. Un sabor para recordar.">A bold brand. A flavor to remember.</h2><p style="color:var(--muted)">Deep & Crust Pizza pairs a bold red, black, and blue identity with a pizza experience designed to stand out. This launch page can be customized with the restaurant’s official story.</p></div>
-<div class="about-panel"><h3 data-en="Getting Ready to Open" data-es="Preparándonos para abrir">Getting Ready to Open</h3><p>We’ll update this section with the restaurant story, ingredients, specialties, and service details confirmed by the owner.</p><div class="location"><span class="pin">📍</span><div><strong>Santo Domingo</strong><br><span style="color:var(--muted)">Dominican Republic</span></div></div></div>
-</div></section>
 
-<section id="hours"><div class="wrap">
-<div class="section-head"><div class="eyebrow" data-en="Plan your visit" data-es="Planifica tu visita">Plan your visit</div><h2 data-en="Hours & Ordering" data-es="Horario y pedidos">Hours & Ordering</h2><p data-en="Restaurant hours and Uber Eats availability are listed separately below." data-es="El horario del restaurante y la disponibilidad en Uber Eats se muestran por separado.">Restaurant hours and Uber Eats availability are listed separately below.</p></div>
-<div class="cards">
-<article class="card"><div class="food-icon">🍽️</div><h3 data-en="Monday–Friday" data-es="Lunes a viernes">Monday–Friday</h3><p data-en="Restaurant: 11:00 AM–7:00 PM" data-es="Restaurante: 11:00–19:00">Restaurant: 11:00 AM–7:00 PM</p><p data-en="Uber Eats: Available until 11:00 PM" data-es="Uber Eats: disponible hasta las 23:00">Uber Eats: Available until 11:00 PM</p></article>
-<article class="card"><div class="food-icon">🍽️</div><h3 data-en="Saturday & Sunday" data-es="Sábado y domingo">Saturday & Sunday</h3><p data-en="Restaurant: 11:00 AM–2:00 AM" data-es="Restaurante: 11:00–2:00">Restaurant: 11:00 AM–2:00 AM</p><p data-en="Uber Eats: available until 2:00 AM" data-es="Uber Eats: disponible hasta las 2:00">Uber Eats: available until 2:00 AM</p></article>
-<article class="card"><div class="food-icon">📱</div><h3 data-en="Order by phone or WhatsApp" data-es="Pide por teléfono o WhatsApp">Order by phone or WhatsApp</h3><p><a href="tel:+18493300227">+1 (849) 330-0227</a><br><a href="https://wa.me/18493300227" target="_blank" rel="noopener" data-en="Message us" data-es="Escríbenos">Message us</a></p></article>
+<section id="menu">
+<div class="wrap">
+<div class="eyebrow" data-en="Made for your appetite" data-es="Hecho para tu apetito">Made for your appetite</div>
+<h2 data-en="Our Menu" data-es="Nuestro menú">Our Menu</h2>
+<p class="intro" data-en="Fresh flavor, generous portions and favorites for the whole family." data-es="Sabor fresco, porciones generosas y favoritos para toda la familia.">Fresh flavor, generous portions and favorites for the whole family.</p>
+<div class="menu-list">
+<div class="menu-group">
+<h3 data-en="Build Your Own New York Style" data-es="Crea tu pizza estilo Nueva York">Build Your Own New York Style</h3>
+<div class="menu-item"><span data-en="Base Pizza" data-es="Pizza base">Base Pizza</span><span class="price">RD$ 299</span></div>
+<div class="menu-item"><span data-en="Shrimp" data-es="Camarones">Shrimp</span><span class="price">RD$ 600</span></div>
+<div class="menu-item"><span data-en="Extra Cheese" data-es="Queso extra">Extra Cheese</span><span class="price">RD$ 100</span></div>
+<div class="menu-item"><span data-en="Double Mozzarella" data-es="Doble mozzarella">Double Mozzarella</span><span class="price">RD$ 100</span></div>
+<div class="menu-item"><span data-en="Mushrooms" data-es="Champiñones">Mushrooms</span><span class="price">RD$ 50</span></div>
+<div class="menu-item"><span data-en="Black Olives" data-es="Aceitunas negras">Black Olives</span><span class="price">RD$ 50</span></div>
+<div class="menu-item"><span data-en="Green Peppers" data-es="Pimientos verdes">Green Peppers</span><span class="price">RD$ 50</span></div>
+<div class="menu-item"><span data-en="Jalapeños" data-es="Jalapeños">Jalapeños</span><span class="price">RD$ 100</span></div>
+<div class="menu-item"><span data-en="Fried Chicken" data-es="Pollo frito">Fried Chicken</span><span class="price">RD$ 199</span></div>
+<div class="menu-item"><span data-en="Bacon" data-es="Tocino">Bacon</span><span class="price">RD$ 100</span></div>
 </div>
-<p class="notice" data-en="Weekend hours: 11:00 AM–2:00 AM." data-es="Horario de fin de semana: 11:00–2:00.">Weekend hours: 11:00 AM–2:00 AM.</p>
-</div></section>
+<div class="menu-group">
+<h3 data-en="Burgers" data-es="Hamburguesas">Burgers</h3>
+<div class="menu-item"><span>Cheeseburger</span><span class="price">RD$ 350</span></div>
+<div class="menu-item"><span>Triple Cheeseburger</span><span class="price">RD$ 499</span></div>
+<div class="menu-item"><span>Yahya's Burger</span><span class="price">RD$ 599</span></div>
+<h3 data-en="Fried Chicken" data-es="Pollo frito">Fried Chicken</h3>
+<div class="menu-item"><span data-en="2 Pieces" data-es="2 piezas">2 Pieces</span><span class="price">RD$ 179</span></div>
+<div class="menu-item"><span data-en="3 Pieces" data-es="3 piezas">3 Pieces</span><span class="price">RD$ 229</span></div>
+<div class="menu-item"><span data-en="4 Pieces" data-es="4 piezas">4 Pieces</span><span class="price">RD$ 289</span></div>
+<div class="menu-item"><span data-en="5 Pieces" data-es="5 piezas">5 Pieces</span><span class="price">RD$ 349</span></div>
+</div>
+<div class="menu-group">
+<h3 data-en="Wings" data-es="Alitas">Wings</h3>
+<div class="menu-item"><span data-en="Spicy Wings" data-es="Alitas picantes">Spicy Wings</span><span class="price">RD$ 449</span></div>
+<div class="menu-item"><span>Buffalo Wings</span><span class="price">RD$ 499</span></div>
+<div class="menu-item"><span>BBQ Wings</span><span class="price">RD$ 499</span></div>
+<div class="menu-item"><span data-en="Honey Wings" data-es="Alitas con miel">Honey Wings</span><span class="price">RD$ 499</span></div>
+<p class="small" data-en="Prices shown in Dominican pesos (RD$). Please confirm availability when ordering." data-es="Precios en pesos dominicanos (RD$). Confirma la disponibilidad al hacer tu pedido.">Prices shown in Dominican pesos (RD$). Please confirm availability when ordering.</p>
+<a class="btn" href="https://wa.me/18493300227" data-en="Ask About the Menu" data-es="Consultar el menú">Ask About the Menu</a>
+</div>
+</div>
+</div>
+</section>
 
-<section id="ubicacion"><div class="wrap"><div class="section-head"><div class="eyebrow" data-en="Visit Us" data-es="Visítanos">Visit Us</div><h2 data-en="Deep & Crust Pizza in Santo Domingo" data-es="Deep & Crust Pizza en Santo Domingo">Deep & Crust Pizza in Santo Domingo</h2><p data-en="The exact address, hours, and ordering links will be added once confirmed." data-es="Añadiremos la dirección exacta y los enlaces de pedido cuando estén confirmados.">The exact address, hours, and ordering links will be added once confirmed.</p></div>
-<div class="cards">
-<div class="card"><div class="food-icon">📍</div><h3>Location</h3><p>Santo Domingo, Dominican Republic<br data-en="Exact address coming soon." data-es="Dirección exacta próximamente.">Exact address coming soon.</p></div>
-<div class="card"><div class="food-icon">🕒</div><h3>Hours</h3><p data-en="Opening hours to be confirmed." data-es="Horario de apertura por confirmar.">Opening hours to be confirmed.</p></div>
-<div class="card"><div class="food-icon">📲</div><h3>Orders</h3><p>Phone and WhatsApp: <a href="tel:+18493300227">+1 (849) 330-0227</a><br><a href="https://wa.me/18493300227" target="_blank" rel="noopener" data-en="Message us on WhatsApp about catering, party rooms, DJ nights, and karaoke" data-es="Escríbenos por WhatsApp sobre catering, salones, noches de DJ y karaoke">Message us on WhatsApp about catering, party rooms, DJ nights, and karaoke</a><br data-en="Delivery details to be confirmed." data-es="Detalles de entrega por confirmar.">Delivery details to be confirmed.</p></div>
-</div></div></section>
+<section id="offers" class="dark">
+<div class="wrap">
+<div class="eyebrow" data-en="Celebrate with us" data-es="Celebra con nosotros">Celebrate with us</div>
+<h2 data-en="Special Offers" data-es="Ofertas especiales">Special Offers</h2>
+<div class="grid">
+<div class="promo">
+<h3 data-en="Birthday Buy One, Get One FREE" data-es="Cumpleaños: compra uno y recibe otro GRATIS">Birthday Buy One, Get One FREE</h3>
+<p data-en="Celebrate your birthday with our special buy-one-get-one offer. Ask our team for details." data-es="Celebra tu cumpleaños con nuestra oferta de compra uno y recibe otro gratis. Consulta los detalles con nuestro equipo.">Celebrate your birthday with our special buy-one-get-one offer. Ask our team for details.</p>
+</div>
+<div class="promo">
+<h3 data-en="FREE Birthday Cake" data-es="Pastel de cumpleaños GRATIS">FREE Birthday Cake</h3>
+<p data-en="RSVP for your birthday celebration to qualify for a complimentary birthday cake. Advance confirmation required." data-es="Confirma tu asistencia para tu celebración de cumpleaños y recibe un pastel gratis. Se requiere confirmación previa.">RSVP for your birthday celebration to qualify for a complimentary birthday cake. Advance confirmation required.</p>
+<a class="btn blue" href="https://wa.me/18493300227" data-en="RSVP Now" data-es="Confirma ahora">RSVP Now</a>
+</div>
+</div>
+</div>
+</section>
+
+<section id="events">
+<div class="wrap">
+<div class="eyebrow" data-en="Music, food & good times" data-es="Música, comida y buenos momentos">Music, food & good times</div>
+<h2 data-en="DJ Karaoke & Party Rooms" data-es="DJ, karaoke y salones para fiestas">DJ Karaoke & Party Rooms</h2>
+<div class="grid">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=800&q=80" alt="Live DJ and music event">
+<div class="pad">
+<h3 data-en="Live DJ & Karaoke" data-es="DJ en vivo y karaoke">Live DJ & Karaoke</h3>
+<p data-en="Every Thursday, Saturday and Sunday, 8 PM–2 AM." data-es="Todos los jueves, sábados y domingos, de 8 PM a 2 AM.">Every Thursday, Saturday and Sunday, 8 PM–2 AM.</p>
+</div>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80" alt="Celebration and party setup">
+<div class="pad">
+<h3 data-en="Party Rooms" data-es="Salones para fiestas">Party Rooms</h3>
+<p data-en="Plan birthdays and special gatherings with friends and family. Contact us to check room availability." data-es="Organiza cumpleaños y celebraciones con familiares y amigos. Contáctanos para consultar la disponibilidad.">Plan birthdays and special gatherings with friends and family. Contact us to check room availability.</p>
+<a class="btn" href="https://wa.me/18493300227" data-en="Ask About Booking" data-es="Consultar reservación">Ask About Booking</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="catering" class="dark">
+<div class="wrap">
+<div class="grid">
+<div>
+<div class="eyebrow" data-en="For every occasion" data-es="Para cada ocasión">For every occasion</div>
+<h2 data-en="Catering Orders" data-es="Pedidos de catering">Catering Orders</h2>
+<p data-en="Make your next event delicious with pizza, burgers, wings and more. Contact us to discuss your group size, menu and pricing." data-es="Haz delicioso tu próximo evento con pizza, hamburguesas, alitas y más. Contáctanos para hablar del tamaño de tu grupo, menú y precios.">Make your next event delicious with pizza, burgers, wings and more. Contact us to discuss your group size, menu and pricing.</p>
+<a class="btn" href="https://wa.me/18493300227" data-en="Request Catering" data-es="Solicitar catering">Request Catering</a>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=900&q=80" alt="Fresh pizza for sharing">
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+<h2 data-en="Visit or Contact Us" data-es="Visítanos o contáctanos">Visit or Contact Us</h2>
+<p data-en="Santo Domingo, Dominican Republic" data-es="Santo Domingo, República Dominicana">Santo Domingo, Dominican Republic</p>
+<p><strong data-en="Call or WhatsApp:" data-es="Teléfono o WhatsApp:">Call or WhatsApp:</strong> <a href="tel:+18493300227">18493300227</a></p>
+<div class="grid">
+<div class="event">
+<strong data-en="Monday–Friday" data-es="Lunes a viernes">Monday–Friday</strong>
+<div data-en="Restaurant: 11 AM–7 PM" data-es="Restaurante: 11 AM–7 PM">Restaurant: 11 AM–7 PM</div>
+<div data-en="Uber Eats: until 11 PM" data-es="Uber Eats: hasta las 11 PM">Uber Eats: until 11 PM</div>
+</div>
+<div class="event">
+<strong data-en="Saturday–Sunday" data-es="Sábado y domingo">Saturday–Sunday</strong>
+<div data-en="11 AM–2 AM" data-es="11 AM–2 AM">11 AM–2 AM</div>
+<div data-en="Confirm delivery hours in the Uber Eats app." data-es="Confirma el horario de entrega en Uber Eats.">Confirm delivery hours in the Uber Eats app.</div>
+</div>
+</div>
+<p class="small" data-en="Hours and promotions may change. Please contact us to confirm before visiting." data-es="Los horarios y las promociones pueden cambiar. Contáctanos para confirmar antes de visitarnos.">Hours and promotions may change. Please contact us to confirm before visiting.</p>
+<a class="btn blue" href="https://wa.me/18493300227" data-en="Message Us" data-es="Escríbenos">Message Us</a>
+</div>
+</section>
 </main>
-<footer><div class="wrap foot"><span>© <span id="year">2026</span> Deep & Crust Pizza</span><span>Santo Domingo, Dominican Republic</span><span>Red · Black · Blue</span></div></footer>
+
+<footer>
+<div class="wrap">
+<div class="logo">Deep <span>&</span> Crust</div>
+<p data-en="Pizza, celebrations and good times in Santo Domingo." data-es="Pizza, celebraciones y buenos momentos en Santo Domingo.">Pizza, celebrations and good times in Santo Domingo.</p>
+<a href="tel:+18493300227">18493300227</a>
+<p class="small">© <span id="year"></span> Deep & Crust Pizza</p>
+</div>
+</footer>
 
 <script>
-(function(){
-  const buttons = document.querySelectorAll('#language-switch button');
-  function setLanguage(lang){
-    document.documentElement.lang = lang;
-    document.querySelectorAll('[data-en][data-es]').forEach(function(el){
-      const value = el.getAttribute('data-' + lang);
-      if (value !== null) el.innerHTML = value;
-    });
-    buttons.forEach(function(btn){
-      const active = btn.getAttribute('data-lang') === lang;
-      btn.classList.toggle('active', active);
-      btn.setAttribute('aria-pressed', active ? 'true' : 'false');
-    });
-  }
-  buttons.forEach(function(btn){
-    btn.addEventListener('click', function(){ setLanguage(btn.getAttribute('data-lang')); });
-  });
-  setLanguage('en');
-})();
+function setLang(lang){
+document.documentElement.lang=lang;
+document.querySelectorAll('[data-en]').forEach(el=>{
+el.textContent=el.getAttribute('data-'+lang);
+});
+document.getElementById('enBtn').classList.toggle('active',lang==='en');
+document.getElementById('esBtn').classList.toggle('active',lang==='es');
+}
+document.getElementById('year').textContent=new Date().getFullYear();
 </script>
-
-</body></html>
+</body>
+</html>
